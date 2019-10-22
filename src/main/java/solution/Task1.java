@@ -3,18 +3,24 @@ package solution;
 public class Task1 {
     public static void main(String[] args) {
 
-        System.out.println(longestWord("moon moon moon."));
+        System.out.println(longestWord(" "));
 
     }
 
     public static String longestWord(String sentence){
-        if( sentence == null || sentence.isEmpty()){
-            return "Your sentence is emty or sentence length is 0 ";
-            }
+        if( sentence == null) return "Your sentence is null";
+        if(sentence.isEmpty()) return "Your sentence is empty";
+
         //to make sure string is not empty
 
-        String[] wordsList = sentence.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+");
-        String longestWord = wordsList[0];
+        sentence = sentence.replaceAll("[^a-zA-Z ]", "");
+
+        String[] wordsList = sentence.toLowerCase().split("\\s+");
+        for (String str: wordsList) {
+            if(str == null) return "Your array is populated with empty strings";
+        }
+
+        String longestWord = "";
 
         //remove characters in String that are not alphanumeric
         //split string into array
