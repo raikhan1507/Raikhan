@@ -7,7 +7,7 @@ Explain any assumptions in comments.
 Add a README explaining how to execute your tests
 Share via Github
 
-# My program is about to find a longest word in sentence and test it.
+1. My program is about to find a longest word in sentence and test it.
 Project itself build with Maven. I store my dependencies in pom.xml. I use Java as a programing language. 
 Solution is under the main directory. 
 All test are under Test directory. I created tests for positive and negative scenarios using JUnit.
