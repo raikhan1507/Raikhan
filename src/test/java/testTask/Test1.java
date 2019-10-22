@@ -50,9 +50,9 @@ public class Test1 extends Task1 {
       String sentenceContainsChar="The1, cow7484! #jumped";
       int expectedMaxLength=6;
       String expectedLongestWord ="jumped";
-      Assert.assertTrue("Happy path test 1 failed, expected word length doesn't match",
+      Assert.assertTrue("Negative scenario 3 failed, expected word length doesn't match",
               expectedMaxLength==Integer.parseInt(Task1.longestWord(sentenceContainsChar).substring(0,1)));
-      Assert.assertTrue("Happy path test 1 failed, expected longest word doesn't match",
+      Assert.assertTrue("Negative scanario 3 failed, expected longest word doesn't match",
               expectedLongestWord.equalsIgnoreCase(Task1.longestWord(sentenceContainsChar).substring(2)));
 
    }
@@ -62,7 +62,6 @@ public class Test1 extends Task1 {
       String sentenceContainsSpaces="    ";
       int expectedMaxLength=0;
       String expectedLongestWord ="";
-      System.out.println(Task1.longestWord(sentenceContainsSpaces));
       Assert.assertTrue(expectedMaxLength == Integer.parseInt("" + Task1.longestWord(sentenceContainsSpaces).charAt(0)));
    }
 

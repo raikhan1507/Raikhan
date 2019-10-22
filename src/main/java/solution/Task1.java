@@ -17,7 +17,7 @@ public class Task1 {
 
         String[] wordsList = sentence.toLowerCase().split("\\s+");
         for (String str: wordsList) {
-            if(str == null) return "Your array is populated with empty strings";
+            if(str.equals(null)) return "Your array is populated with empty strings";
         }
 
         String longestWord = "";
