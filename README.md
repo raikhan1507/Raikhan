@@ -1,6 +1,6 @@
- Raikhan
+#
 Lengthy Word Counter
-Challenge
+# Challenge
 In the programming language of your choice create a method to return the length and longest words in a sentence. For example, "The cow jumped over the moon." should return 6 and "jumped".
 Create unit test to test that method, reworking your code if needed.
 Explain any assumptions in comments.
